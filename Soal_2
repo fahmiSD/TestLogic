@@ -1,0 +1,10 @@
+#Soal 2
+def count_occ(string, chars=[]): 
+    count = len(string.split()) 
+    for c in string: 
+        if c in chars: 
+            count -= 1 
+    return count 
+ 
+special = "!\"£$%&/()='?^+*[]{}#@_.:,;" 
+print(count_occ("Masing-masing anak mendap(atkan uang jajan ya=ng be&rbeda", special))
